@@ -51,6 +51,6 @@ tasks.withType(Test) {
 
 task regression_test(type: Test) {
     useJUnitPlatform {
-        includeTags("egression")
+        includeTags("regression")
     }
 }
