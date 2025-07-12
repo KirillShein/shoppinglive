@@ -13,9 +13,9 @@ public class OnlineTVPage {
 
     @Step("Кликаем по кнопке видео-проигрователя")
     public OnlineTVPage clickButtonPlay() {
-        executeJavaScript("window.scrollBy(0, +120);");
+        executeJavaScript("window.scrollBy(0, +140);");
         buttonPlay.click();
-        sleep(2000);
+
         return this;
     }
 
