@@ -7,10 +7,7 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import pages.FavoritePage;
-import pages.MainPage;
-import pages.OnlineTVPage;
-import pages.ResultSearchPage;
+import pages.*;
 
 import java.util.Map;
 
@@ -20,7 +17,8 @@ public class TestBase {
     ResultSearchPage resultSearchPage = new ResultSearchPage();
     FavoritePage favoritePage = new FavoritePage();
     OnlineTVPage onlineTVPage = new OnlineTVPage();
-
+    BeautyPage beautyPage = new BeautyPage();
+    CartPage cartPage = new CartPage();
 
     @BeforeAll
     static void beforeAll() {

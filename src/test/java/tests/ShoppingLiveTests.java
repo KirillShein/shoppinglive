@@ -44,5 +44,17 @@ public class ShoppingLiveTests extends TestBase {
                     .checkPlayTV();
     }
 
+    @DisplayName("Проверка добавления товара в корзину")
+    @Test
+    void CheckAddProductToCart() {
+        beautyPage.openBeatyPage()
+                    .scrollToResultProductComponent()
+                    .clickButtonAddToCart()
+                    .checkOpenModalAddCart()
+                    .clickToCartPage();
+
+        cartPage.checkProductsInCart();
+    }
+
 
 }
