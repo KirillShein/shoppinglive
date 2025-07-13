@@ -44,19 +44,8 @@ public class ShoppingLiveTests extends TestBase {
                     .checkPlayTV();
     }
 
-    @DisplayName("Проверка добавления товара в корзину")
-    @Test
-    void CheckAddProductToCart() {
-        beautyPage.openBeatyPage()
-                    .scrollToResultProductComponent()
-                    .clickButtonAddToCart()
-                    .checkOpenModalAddCart()
-                    .clickToCartPage();
 
-        cartPage.checkProductsInCart();
-    }
-
-    @DisplayName("Проверка создания быстрого заказа")
+    @DisplayName("Проверка добавления товара в корзину и создания быстрого заказа")
     @Test
     void QuickOrderTest() {
         beautyPage.openBeatyPage()
