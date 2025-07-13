@@ -4,7 +4,10 @@ import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 
+import java.time.Duration;
+
 import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 
 public class BeautyPage {
@@ -37,7 +40,7 @@ public class BeautyPage {
 
     @Step("Проверяем открытие модального окна")
     public BeautyPage checkOpenModalAddCart() {
-        modalAddCartTitle.findBy(text("Товар в корзине"));
+        modalAddCartTitle.findBy(text("Товар в корзине")).shouldBe(visible, Duration.ofSeconds(5));
         return this;
     }
 
