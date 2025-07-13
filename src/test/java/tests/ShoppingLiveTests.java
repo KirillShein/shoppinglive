@@ -56,5 +56,24 @@ public class ShoppingLiveTests extends TestBase {
         cartPage.checkProductsInCart();
     }
 
+    @DisplayName("Проверка создания быстрого заказа")
+    @Test
+    void QuickOrderTest() {
+        beautyPage.openBeatyPage()
+                .scrollToResultProductComponent()
+                .clickButtonAddToCart()
+                .checkOpenModalAddCart()
+                .clickToCartPage();
+
+        cartPage.scrollToButtonQuickOrder()
+                .clickButtonQuickOrder();
+
+        quickOrderPage.setPhone(testData.phone)
+                .setEmail(testData.email)
+                .setName(testData.name)
+                .clickButtonContinue()
+                .checkOpenModal();
+    }
+
 
 }

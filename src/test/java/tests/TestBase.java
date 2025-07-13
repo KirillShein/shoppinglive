@@ -19,6 +19,7 @@ public class TestBase {
     OnlineTVPage onlineTVPage = new OnlineTVPage();
     BeautyPage beautyPage = new BeautyPage();
     CartPage cartPage = new CartPage();
+    QuickOrderPage quickOrderPage = new QuickOrderPage();
 
     @BeforeAll
     static void beforeAll() {
