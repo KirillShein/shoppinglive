@@ -13,7 +13,7 @@ public class BeautyPage {
                                     buttonToCart = $(".product-buy-block__button");
 
 
-    private final ElementsCollection buttonOpenCart = $$(".buttons-block__item button"),
+    private final ElementsCollection buttonOpenCart = $$(".buttons-block__item button.orange-bg"),
                                         modalAddCartTitle = $$(".backstage-body__title");
 
     @Step("Открываем страницу с товарами категория Красота")
