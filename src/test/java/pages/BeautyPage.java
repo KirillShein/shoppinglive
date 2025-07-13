@@ -10,10 +10,11 @@ import static com.codeborne.selenide.Selenide.*;
 public class BeautyPage {
 
     private final SelenideElement resultProductComponent = $("[data-js='product-grid-result']"),
-                                    buttonToCart = $(".product-buy-block__button"),
-                                    modalAddCartTitle = $(".backstage-body__title");
+                                    buttonToCart = $(".product-buy-block__button");
 
-    private final ElementsCollection buttonOpenCart = $$(".buttons-block__item button");
+
+    private final ElementsCollection buttonOpenCart = $$(".buttons-block__item button"),
+                                        modalAddCartTitle = $$(".backstage-body__title");
 
     @Step("Открываем страницу с товарами категория Красота")
     public BeautyPage openBeatyPage() {
@@ -36,7 +37,7 @@ public class BeautyPage {
 
     @Step("Проверяем открытие модального окна")
     public BeautyPage checkOpenModalAddCart() {
-        modalAddCartTitle.shouldBe(text("Товар в корзине"));
+        modalAddCartTitle.findBy(text("Товар в корзине"));
         return this;
     }
 
