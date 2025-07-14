@@ -33,7 +33,7 @@ public class ShoppingLiveTests extends TestBase {
 
     }
 
-    @DisplayName("Проверка онлайн трансляции ТВ")
+    @DisplayName("Проверка онлайн трансляции")
     @Test
     void CheckTVBroadcast() {
         mainPage.openMainPage()
