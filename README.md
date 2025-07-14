@@ -61,10 +61,10 @@
 
 
 <a id="jenkins"></a>
-## <img alt="Jenkins" height="25" src="images/icons/Jenkins.svg" width="25"/></a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.autotests.cloud/job/Kod3ik_qa_guru_x5/)</a>
+## <img alt="Jenkins" height="25" src="src/test/resources/images/icons/Jenkins.svg" width="25"/></a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.autotests.cloud/job/Kod3ik_qa_guru_x5/)</a>
 Jenkins используется для автоматизации сборки и тестирования проекта. Он позволяет любому члену команды запускать тесты в любое время.
 <p align="center">  
-<a href="https://jenkins.autotests.cloud/job/Shopping-live"><img src="src/test/resources/images/icons/screenshots/jenkins-build.png" alt="Jenkins" width="950"/></a>  
+<a href="https://jenkins.autotests.cloud/job/Shopping-live"><img src="src/test/resources/images/screenshots/jenkins-build.png" alt="Jenkins" width="950"/></a>  
 </p>
 
 ### **Параметры сборки в Jenkins:**
@@ -117,7 +117,7 @@ Allure используется для генерации подробных о�
 
 
 <a id="telegram"></a>
-## <img alt="Allure" height="25" src="images/icons/Telegram.svg" width="25"/></a> Уведомление ботом в Telegram о сборке
+## <img alt="Allure" height="25" src="src/test/resources/images/icons/Telegram.svg" width="25"/></a> Уведомление ботом в Telegram о сборке
 Настроены уведомления в Telegram для получения информации о статусе сборки и тестирования.
 
 <p align="center">  
@@ -126,9 +126,9 @@ Allure используется для генерации подробных о�
 
 
 <a id="video"></a>
-## <img alt="Selenoid" height="25" src="images/icons/Selenoid.svg" width="25"/></a> Видеозаписи выполнения тестов в Selenoid
+## <img alt="Selenoid" height="25" src="src/test/resources/images/icons/Selenoid.svg" width="25"/></a> Видеозаписи выполнения тестов в Selenoid
 Помогают визуально проверять, как проходят тесты и выявлять проблемы.
 
 <p align="center">
-<img title="Selenoid Video" src="images/video/selenoid.gif" width="550" height="350"  alt="video">   
+<img title="Selenoid Video" src="src/test/resources/images/video/selenoid.gif" width="550" height="350"  alt="video">   
 </p>
