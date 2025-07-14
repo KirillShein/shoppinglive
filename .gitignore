@@ -2,7 +2,7 @@ HELP.md
 build/
 !**/src/main/**
 !**/src/test/**
-!images/
+!**/images/**
 
 ### IntelliJ IDEA ###
 .idea
